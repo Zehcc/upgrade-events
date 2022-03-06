@@ -3,28 +3,40 @@ evento click que ejecute un console log con la información del evento del click
 
 let btnToClick = document.querySelector('.btnToClick');
 
-btnToClick.addEventListener('click', clickButton = () =>{
+const clickButton = () => {
     console.log('Has pulsado el botón')
-})
+} 
+
+btnToClick.addEventListener('click', clickButton)
+
+
 
 /* 1.2 Añade un evento 'focus' que ejecute un console.log con el valor del input. */
 
 let focusInput = document.querySelector('.focus');
 
-focusInput.addEventListener('focus', focusEvent = () =>{
+const focusEvent = () => {
     let focusValue = focusInput.value ;
     console.log(focusValue)
-})
+}
+
+focusInput.addEventListener('focus', focusEvent)
+
+
 
 /* 1.3 Añade un evento 'input' que ejecute un console.log con el valor del input. */
 
 let inputValue = document.querySelector('.value');
 
-inputValue.addEventListener('input', inputEvent = ()=>{
+const inputEvent = () => {
     let inputText = inputValue.value ;
     console.log(inputText)
-})
-    
+}
+
+inputValue.addEventListener('input', inputEvent) 
+
+
+
 
 
 
